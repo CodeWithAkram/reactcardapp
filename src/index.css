@@ -1,13 +1,137 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: content-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: rgb(217, 219, 215);
 }
+
+.header {
+  width: 100%;
+  background: #fff;
+}
+
+.logo {
+  width: 25%;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+  float: left;
+  height: auto;
+  padding: 0;
+  height: 60px;
+  line-height: 60px;
+  font-family:cursive;
+}
+
+.header__ul{
+  width: 75%;
+  list-style: none;
+  display: flex;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  float: right;
+}
+
+.header__ul li{
+  padding: 0 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  list-style-type: none;
+  display:inline;
+  float: left;
+  justify-content: flex-end;
+}
+
+.slier {
+  width: 100%;
+  background: #fff;
+}
+
+.container {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.row {
+  width: 100%;
+  display: flex;   
+}
+
+.row p {
+  font-size: 12px;
+  color: rgb(20, 11, 11);
+  font-weight: 200;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.netflix__series {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  background: #fff;
+  padding: 20px;
+  color: #c0c0c0;
+  text-transform: uppercase;
+}
+
+.cards {  
+  margin: 20px 20px 20px 0px; 
+  float: left; 
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card {
+  text-align: center;
+  width: 280px;
+  height: 415px;  
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .card__info {
+    padding: 20px 0 20px 0;
+  }
+  .card__img {
+    border-radius: 10px 10px 0 0;
+  }
+  .card__category{
+    font-size: 16px;
+    font-weight: 300;
+    color: #5a505a;
+  }
+
+  .card__title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .card__info button {
+    padding: 5px;
+    cursor: pointer;
+  }
+
+ 
+  
+
+
+  
+  .footer {
+    width: 100%;
+    display:  flex;
+    background: #fff;
+    
+  }

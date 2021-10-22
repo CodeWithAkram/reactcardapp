@@ -1,0 +1,60 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: content-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.container {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.cards {  
+  margin: 20px; 
+  float: left; 
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.card {
+  text-align: center;
+  width: 300px;
+  height: 440px;  
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .card__info {
+    padding: 20px 0 20px 0;
+  }
+  .card__img {
+    border-radius: 3px;
+  }
+  .card__category{
+    font-size: 16px;
+    font-weight: 300;
+    color: #C0BEC0;
+  }
+
+  .card__title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .card__info button {
+    padding: 5px;
+    cursor: pointer;
+  }

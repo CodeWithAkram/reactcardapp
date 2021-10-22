@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import react from 'react';
+import ReactDOM from 'react-dom';
+import Card from './Cards';
+import './index.css';
+import Header from './Header';
+import Slider from './Slider';
+import Sdata from './Sdata';
+import Footer from './Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const ncard = (val) => {
+    return (
+        <Card
+            imgsrc={val.imgsrc}
+            alt={val.alt}
+            title={val.title}
+            sname={val.sname}
+            Link={val.Link}
+        />
+    );
+}
+
+const App = () => {
+    return (
+        <>
+            <Header />
+            <Slider />
+            <h1 className="netflix__series">List of Top 8 Netflix Series in 2021</h1>
+            {Sdata.map(ncard)}
+            <Footer />
+
+        </>
+    );
 }
 
 export default App;
